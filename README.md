@@ -8,15 +8,15 @@ Mostly meant to be a centralized collection point for important information, bot
 
 
 Build/Prereqs
-==============
+-------------
 
 Currently setup to use postgresql and pq (github.com/lib/pq).  To install pq, run 'go get github.com/lib/pq'.
 
 Table schema:
-id serial
-tag varchar
-message varchar
-age timestamp without timezone NOT NULL DEFAULT now()
+(id serial,  
+tag varchar,  
+message varchar,  
+age timestamp without timezone NOT NULL DEFAULT now() )  
 
 
 TODO
